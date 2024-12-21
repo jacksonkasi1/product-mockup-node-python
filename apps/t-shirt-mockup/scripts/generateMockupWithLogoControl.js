@@ -92,7 +92,7 @@ function generateMockupWithLogoControl(opts) {
     // 5) Apply the lighting map
     //    We'll use "hardlight" by default, consistent with your prior script
     runCommand(
-      `convert "${tmpComposite}" \\( -clone 0 "${lightingMap}" -compose hardlight -composite \\) +swap -compose CopyOpacity -composite "${tmpComposite}"`
+      `convert "${tmpComposite}" \\( -clone 0 "${lightingMap}" -compose overlay -composite \\) +swap -compose CopyOpacity -composite "${tmpComposite}"`
     );
 
     // 6) Apply the adjustment map
