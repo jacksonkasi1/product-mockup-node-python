@@ -20,19 +20,19 @@ try {
 
   // CONTROL FOR LOGO
   // 2) Generate final mockup from the newly created maps plus your artwork (logo.png)
-  // execSync(`
-  //   node scripts/generateMockupWithLogoControl.js \
-  // base_images/template.jpg \
-  // base_images/mask.png \
-  // swatches/art25.png \
-  // 600 650 \
-  // 300 350 \
-  // -45 \
-  // maps/displacement_map.png \
-  // maps/lighting_map.png \
-  // maps/adjustment_map.jpg \
-  // mockups/final_mockup_with_logo_control.png
-  //   `, { stdio: 'inherit' });
+  execSync(`
+    node scripts/generateMockupWithLogoControl.js \
+  base_images/template.jpg \
+  base_images/mask.png \
+  swatches/logo.png \
+  600 650 \
+  300 350 \
+  -45 \
+  maps/displacement_map.png \
+  maps/lighting_map.png \
+  maps/adjustment_map.jpg \
+  mockups/final_mockup_with_logo_control.png
+    `, { stdio: 'inherit' });
 
   console.log('All processes completed successfully!');
 } catch (err) {
