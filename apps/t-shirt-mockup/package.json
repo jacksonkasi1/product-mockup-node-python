@@ -1,0 +1,13 @@
+{
+    "name": "t-shirt-mockup",
+    "version": "1.0.0",
+    "description": "Node.js project to generate maps and mockups using ImageMagick",
+    "main": "scripts/main.js",
+    "scripts": {
+      "create-maps": "node scripts/createMaps.js base_images/template.jpg base_images/mask.png",
+      "generate-mockup": "node scripts/generateMockup.js base_images/template.jpg base_images/mask.png swatches/logo.png maps/displacement_map.png maps/lighting_map.png maps/adjustment_map.jpg mockups/final_mockup.png",
+      "start": "node scripts/main.js"
+    },
+    "author": "",
+    "license": "ISC"
+  }
