@@ -112,7 +112,7 @@ async function generateMockup(params) {
  */
 const mockups = {
   out: 'mockups/final_mockup.png',  // Output file
-  artwork: 'swatches/art24.png',   // Swatch file
+  artwork: 'swatches/art26.png',   // Swatch file
   template: 'base_images/template.jpg', // Template file
   mask: 'base_images/mask.png',        // Mask file
   displacementMap: 'maps/displacement_map.png', // Displacement map
